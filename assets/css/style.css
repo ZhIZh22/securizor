@@ -2588,6 +2588,10 @@ body.modal-open .page-wrapper > footer {
   max-width: 85rem; /* 1360px */
   height: 33.5625rem; /* 537px */
   background-color: #242424;
+  background-image: url('../images/fon.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   aspect-ratio: 1360 / 537;
   border-radius: 28px;
   display: -webkit-box;
@@ -6146,6 +6150,10 @@ body.modal-open .page-wrapper > footer {
 /* Light Theme - Hero Section Styles */
 .light-theme .hero__heading {
   background-color: #EFEFEF;
+  background-image: url('../images/fon.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .light-theme .hero__heading-text {
