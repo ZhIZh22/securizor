@@ -1,0 +1,15 @@
+# Не коммитить файл с настроенными токенами
+# assets/js/telegram-form.js
+
+# Node modules
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
