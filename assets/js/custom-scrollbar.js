@@ -398,16 +398,15 @@
       if (reportRightScrollbar.scrollbar) {
         reportRightScrollbar.scrollbar.classList.add('report-right-scrollbar');
         
-        // Устанавливаем отступ сверху 65px в процентах от высоты блока
+        // Устанавливаем отступ справа такой же, как у левого блока (6px)
+        reportRightScrollbar.scrollbar.style.right = '6px';
+        
+        // Устанавливаем отступ сверху 10px и высоту на всю оставшуюся высоту блока
         const updateScrollbarTop = () => {
           const parentBlock = reportRightContent.closest('.report__block--right');
           if (parentBlock && reportRightScrollbar.scrollbar) {
-            const blockHeight = parentBlock.offsetHeight;
-            const topOffset = 115; // 65px отступ сверху
-            const topPercent = (topOffset / blockHeight) * 100;
-            
-            reportRightScrollbar.scrollbar.style.top = topPercent + '%';
-            reportRightScrollbar.scrollbar.style.height = `calc(100% - ${topPercent}%)`;
+            reportRightScrollbar.scrollbar.style.top = '10px';
+            reportRightScrollbar.scrollbar.style.height = 'calc(100% - 10px)';
           }
         };
         
